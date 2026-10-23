@@ -75,7 +75,7 @@ curl -X POST http://localhost:8000/qa/ask \
 
 ## Worth Noting
 
-- Chunking is word-based, not token-based right now — it's a placeholder.
+- Chunking is word-based, not token-based right now, it's a placeholder.
 <!-- - Swapping in tiktoken for real token-aware chunking is a good "here's what I improved" talking point for interviews. -->
-- Embeddings use an OpenAI-compatible API since Claude doesn't have an embeddings endpoint — you'll need a key from OpenAI or Azure OpenAI for that piece specifically, separate from your Anthropic key.
-- No auth yet — fine for a portfolio demo, but adding per-user document scoping would be a natural "v2" to mention.
+- Embeddings use an OpenAI-compatible API since Claude doesn't have an embeddings endpoint, you'll need a key from OpenAI or Azure OpenAI for that piece specifically, separate from your Anthropic key.
+- No auth yet, fine for a portfolio demo, but adding per-user document scoping would be a natural "v2" to mention.
