@@ -24,6 +24,8 @@ def _chunk_text(text, chunk_size=None, overlap=None):
     while start < len(words):
         end = start + chunk_size
         chunks.append(" ".join(words[start:end]))
+        if end >= len(words):
+            break
         start = end - overlap
     return [c for c in chunks if c.strip()]
 

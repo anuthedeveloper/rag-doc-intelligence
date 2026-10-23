@@ -3,6 +3,8 @@ from .models import Document
 
 
 class DocumentUploadSerializer(serializers.ModelSerializer):
+    original_filename = serializers.CharField(required=False)
+
     class Meta:
         model = Document
         fields = ["id", "file", "original_filename", "status"]
